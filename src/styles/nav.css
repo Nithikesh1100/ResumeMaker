@@ -1,0 +1,82 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  position: relative;
+}
+
+.detailsNresume {
+  display: flex;
+  gap: 20px;
+}
+
+.detailsNresume a {
+  color: #fff; /* Link color */
+  text-decoration: none; /* Remove underline */
+  padding: 10px 15px; /* Padding for better click area */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.detailsNresume a:hover {
+  background-color: #444; /* Background color on hover */
+  color: #f0f0f0; /* Text color on hover */
+}
+
+.active-link {
+  font-weight: bold;
+  color: #f0f0f0;
+}
+
+
+.navbar-toggler {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.active-link {
+  font-weight: bold;
+  color: #f0f0f0;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 50px; /* Adjust as per your design */
+  right: 10px; /* Adjust as per your design */
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  min-width: 100px; /* Ensures a minimum width */
+}
+
+.dropdown-menu a, .dropdown-menu span {
+  padding: 8px 12px;
+  color: #333;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-menu a:hover, .dropdown-menu span:hover {
+  background-color: #37B7C3;
+}
+
+.dropdown-menu a.active-link {
+  background-color: #ddd;
+  font-weight: bold;
+}
+
+.dropdown-menu span {
+  color: #333;
+}

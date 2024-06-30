@@ -1,0 +1,53 @@
+.resume {
+  display: flex;
+}
+
+.profile-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  padding: 20px;
+  background-color: black;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 30%;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-right: 20px;
+  border: #088395 solid;
+  padding: 20px;
+}
+
+
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  color: white;
+  /* Example: Set text color to white */
+  width: 70%;
+  border: #088395 solid;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 30px;
+}
+
+/* .info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 5px;
+} */
+
+.info-container h1 {
+  font-size: 20px;
+}
+
+
+.info-container p {
+  font-size: 16px;
+}
