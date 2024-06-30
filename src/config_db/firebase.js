@@ -3,17 +3,21 @@ import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 import { getStorage } from "firebase/storage";  // <-- Importing storage
+// require('dotenv').config({path:'./config/.env'});
+const config = require('./config');
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
+console.log(process.env.apiKey);
+
 const firebaseConfig = {
-    apiKey: "AIzaSyCgf7hKtWBWlh2QiSnra1OUe_AoIfDAaqA",
-  authDomain: "resumemaker-fbfcf.firebaseapp.com",
-  projectId: "resumemaker-fbfcf",
-  storageBucket: "resumemaker-fbfcf.appspot.com",
-  messagingSenderId: "697505368763",
-  appId: "1:697505368763:web:566046aaffade1ad34379e"
+    apiKey: config.apiKey,
+  authDomain:config.authDomain,
+  projectId: config.projectId,
+  storageBucket: config.storageBucket,
+  messagingSenderId: config.messagingSenderId,
+  appId: config.appId
 };
 
 // Initialize Firebase
